@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>RAMPAGE v1.4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+<div id="root">
+<canvas id="gameCanvas"></canvas>
+
+<div id="hud">
+  <div class="hud-block"><span class="hud-label">VIDAS</span><div class="hud-lives" id="hud-lives"></div></div>
+  <div class="hud-block"><span class="hud-label">PONTOS</span><span class="hud-value" id="hud-score">0</span></div>
+  <div class="hud-block"><span class="hud-label">NÍVEL</span><span class="hud-value" id="hud-level">1</span></div>
+</div>
+
+<div id="lvl-badge" style="opacity:0"></div>
+<div id="mission-card" style="display:none"><div id="mission-name">FASE 1</div><div id="mission-text">DESTRUA A CIDADE</div><div id="objective-progress">0%</div></div>
+<div id="boss-wrap"><div id="boss-name">CHEFE</div><div id="boss-bg"><div id="boss-fill"></div></div></div>
+<button id="pause-btn" aria-label="Pausar">Ⅱ</button>
+
+<div id="bars-wrap">
+  <div class="bar-row">
+    <span class="bar-lbl">VIDA DO MONSTRO</span>
+    <div class="bar-bg"><div class="bar-fill" id="hp-bar" style="width:100%"></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-lbl">EXPERIÊNCIA</span>
+    <div class="bar-bg"><div class="bar-fill" id="xp-bar" style="width:0%"></div></div>
+  </div>
+</div>
+
+<div id="rage-bar-wrap">
+  <span id="rage-lbl">⚡ FÚRIA</span>
+  <div id="rage-bar-bg"><div id="rage-bar-fill" style="width:100%"></div></div>
+</div>
+<div id="roar-flash"></div>
+<div id="levelup-msg">⬆ POWER UP!</div>
+
+<div id="pad">
+  <div id="dpad">
+    <button class="dpad-btn" id="btn-left"  data-key="ArrowLeft"><span class="dpad-arrow">◀</span></button>
+    <button class="dpad-btn" id="btn-right" data-key="ArrowRight"><span class="dpad-arrow">▶</span></button>
+    <button class="dpad-btn" id="btn-up"    data-key="ArrowUp"><span class="dpad-arrow">▲</span></button>
+    <button class="dpad-btn" id="btn-down"  data-key="ArrowDown"><span class="dpad-arrow">▼</span></button>
+    <div class="dpad-center"></div>
+  </div>
+  <div id="action-btns">
+    <div class="row-btns">
+      <div style="position:relative"><button class="act-btn" id="btn-smash" data-key="KeyS">💥<span class="btn-label">TREMOR</span></button></div>
+      <div style="position:relative"><button class="act-btn" id="btn-roar"  data-key="KeyE">😤<span class="btn-label">RUGIDO</span></button></div>
+      <div style="position:relative"><button class="act-btn" id="btn-jump"  data-key="KeyJ">⬆️<span class="btn-label">PULAR</span></button></div>
+    </div>
+    <div class="row-btns">
+      <div style="position:relative"><button class="act-btn" id="btn-punch-l" data-key="KeyZ">👊<span class="btn-label">SOCO E</span></button></div>
+      <div style="position:relative"><button class="act-btn" id="btn-punch-r" data-key="KeyX">👊<span class="btn-label">SOCO D</span></button></div>
+    </div>
+  </div>
+</div>
+
+<div id="phase-banner"></div>
+<div id="combo-popup"></div>
+<div id="desktop-help"><b>PC:</b> A/D ou ←/→ · W/ESPAÇO pular · Z/X socos · S/C tremor · E/R rugido · ESC pausa · 🎮 gamepad</div>
+<div id="pad-status">🎮 CONTROLE CONECTADO</div>
+
+<div id="overlay">
+  <div class="ov-title">RAMPAGE</div>
+  <div class="ov-sub">MONSTER DESTRUCTION</div>
+  <div class="ov-divider"></div>
+  <div class="ov-body">
+    <strong>D-PAD</strong> — Mover / Pular / Escalar<br>
+    <strong>SOCO E/D</strong> — Destruir prédios e inimigos<br>
+    <strong>TREMOR</strong> — Ataque em área no chão<br>
+    <strong>RUGIDO (E)</strong> — Paralisa inimigos próximos<br>
+    <strong>PULAR</strong> — Botão dedicado<br>
+    <span style="color:#888;font-size:12px">Derrote inimigos para ganhar XP e evoluir!</span>
+  </div>
+  <button class="ov-btn" id="startBtn">DESTRUIR!</button>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@8.20.0/dist/pixi.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/v13-system.js"></script>
+<script src="js/pixi-renderer.js"></script>
+</body>
+</html>
