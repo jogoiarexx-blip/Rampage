@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>RAMPAGE v1.4</title>
+<title>RAMPAGE v1.5.1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boogaloo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/game.css">
@@ -86,8 +86,14 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.20.0/dist/pixi.min.js"></script>
-<script src="js/game.js"></script>
-<script src="js/v13-system.js"></script>
-<script src="js/pixi-renderer.js"></script>
+<!-- JavaScript modularizado: ordem importante para compatibilidade -->
+<script src="js/core/bootstrap.js"></script>
+<script src="js/gameplay/gameplay.js"></script>
+<script src="js/render/canvas-renderer.js"></script>
+<script src="js/systems/progression.js"></script>
+<script src="js/content/campaign.js"></script>
+<script src="js/systems/runtime.js"></script>
+<script src="assets/sprites_v2/sprite-catalog.js"></script>
+<script src="js/render/pixi-renderer.js"></script>
 </body>
 </html>
