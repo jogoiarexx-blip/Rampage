@@ -1,0 +1,135 @@
+{
+  "version": "1.5.1",
+  "enemies": {
+    "civilian": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "run": {
+          "frames": [
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_00.webp",
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_01.webp",
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "soldier": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "shoot": {
+          "frames": [
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_00.webp",
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_01.webp",
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "rocket_trooper": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "attack": {
+          "frames": [
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_00.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_01.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_02.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_03.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "jeep": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "move": {
+          "frames": [
+            "assets/sprites_v2/enemies/jeep/move/jeep_move_00.webp",
+            "assets/sprites_v2/enemies/jeep/move/jeep_move_01.webp"
+          ],
+          "fps": 6,
+          "loop": true
+        }
+      }
+    },
+    "helicopter": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "fly": {
+          "frames": [
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_00.webp",
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_01.webp",
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_02.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        }
+      }
+    },
+    "drone": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "hover": {
+          "frames": [
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_00.webp",
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_01.webp",
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "tank": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "move": {
+          "frames": [
+            "assets/sprites_v2/enemies/tank/move/tank_move_00.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_01.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_02.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_03.webp"
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "fire": {
+          "frames": [
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_00.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_01.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_02.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_03.webp"
+          ],
+          "fps": 9,
+          "loop": false
+        }
+      }
+    }
+  }
+}

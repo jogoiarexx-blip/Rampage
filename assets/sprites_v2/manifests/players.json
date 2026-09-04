@@ -1,0 +1,235 @@
+{
+  "version": "1.5.1",
+  "players": {
+    "brutus": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_00.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_01.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_02.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_03.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_00.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_01.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_02.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_03.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "punch_combo": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_00.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_01.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_02.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_03.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "ground_slam": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_00.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_01.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_02.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_03.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "grab_throw": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_00.webp",
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_01.webp",
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_02.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "hurt_defeat": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_00.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_01.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_02.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_03.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_04.webp"
+          ],
+          "fps": 7,
+          "loop": false
+        }
+      }
+    },
+    "gorak": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_00.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_01.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_02.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_03.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_00.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_01.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_02.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_03.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "claw_attack": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_00.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_01.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_02.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_03.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "tail_swipe": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_00.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_01.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_02.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_03.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        },
+        "body_slam": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_00.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_01.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_02.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_03.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "breath_charge": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_00.webp",
+            "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_01.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "defeat": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/defeat/gorak_defeat_00.webp"
+          ],
+          "fps": 6,
+          "loop": false
+        }
+      }
+    },
+    "volt": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/volt/idle/volt_idle_00.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_01.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_02.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_03.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/volt/walk/volt_walk_00.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_01.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_02.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_03.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "claw_combo": {
+          "frames": [
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_00.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_01.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_02.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_03.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "leap_attack": {
+          "frames": [
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_00.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_01.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_02.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_03.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "grab_throw": {
+          "frames": [
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_00.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_01.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_02.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_03.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "roar_charge": {
+          "frames": [
+            "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_00.webp",
+            "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_01.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "hurt_defeat": {
+          "frames": [
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_00.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_01.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_02.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_03.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_04.webp"
+          ],
+          "fps": 7,
+          "loop": false
+        }
+      }
+    }
+  }
+}

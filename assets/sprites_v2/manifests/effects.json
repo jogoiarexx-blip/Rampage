@@ -1,0 +1,101 @@
+{
+  "version": "1.5.1",
+  "effects": {
+    "combat_fx_00": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_00.webp"
+    },
+    "combat_fx_01": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_01.webp"
+    },
+    "combat_fx_02": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_02.webp"
+    },
+    "combat_fx_03": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_03.webp"
+    },
+    "combat_fx_04": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_04.webp"
+    },
+    "combat_fx_05": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_05.webp"
+    },
+    "combat_fx_06": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_06.webp"
+    },
+    "combat_fx_07": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_07.webp"
+    },
+    "combat_fx_08": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_08.webp"
+    },
+    "combat_fx_09": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_09.webp"
+    },
+    "combat_fx_10": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_10.webp"
+    },
+    "combat_fx_11": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_11.webp"
+    },
+    "combat_fx_12": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_12.webp"
+    },
+    "combat_fx_13": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_13.webp"
+    },
+    "combat_fx_14": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_14.webp"
+    },
+    "combat_fx_15": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_15.webp"
+    },
+    "combat_fx_16": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_16.webp"
+    },
+    "combat_fx_17": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_17.webp"
+    },
+    "combat_fx_18": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_18.webp"
+    },
+    "combat_fx_19": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_19.webp"
+    },
+    "combat_fx_20": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_20.webp"
+    },
+    "combat_fx_21": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_21.webp"
+    },
+    "combat_fx_22": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_22.webp"
+    },
+    "combat_fx_23": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_23.webp"
+    },
+    "combat_fx_24": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_24.webp"
+    },
+    "combat_fx_25": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_25.webp"
+    },
+    "combat_fx_26": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_26.webp"
+    },
+    "combat_fx_27": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_27.webp"
+    },
+    "combat_fx_28": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_28.webp"
+    },
+    "combat_fx_29": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_29.webp"
+    },
+    "combat_fx_30": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_30.webp"
+    },
+    "combat_fx_31": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_31.webp"
+    }
+  }
+}
