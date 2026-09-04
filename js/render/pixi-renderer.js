@@ -1,4 +1,4 @@
-/* RAMPAGE 1.5.1 — PIXIJS GPU SPRITE LAYER */
+/* RAMPAGE 1.5.4 — PIXIJS GPU SPRITE LAYER */
 (() => {
   const SPRITES = window.RAMPAGE_SPRITES || {players:{},enemies:{},bosses:{}};
   let app=null, stage=null, pixiReady=false, pixiFailed=false, monsterSprite=null;
@@ -43,13 +43,24 @@
     if(m.hp<=0) return 'dead';
     if((m.invincible||0)>0 && frameT%10<3) return 'hurt';
     if((m.smashTimer||0)>0) return 'smash';
+    if((m.punchL||0)>0 || (m.punchR||0)>0) return (m.punchL||0) >= (m.punchR||0) ? 'attack_l' : 'attack_r';
     if((m.roarTimer||0)>0 || (m.rage||0)>0) return 'special';
-    if((m.punchL||0)>0 || (m.punchR||0)>0) return 'attack';
     if(Math.abs(m.vx||0)>.35) return 'walk';
     return 'idle';
   }
-  function frameIndex(len,state){
+  function frameIndex(len,state,actor=null){
     if(len<=1)return 0;
+    if(actor && String(state).startsWith('attack')){
+      const total=actor.punchDuration||24;
+      const timer=(state==='attack_r'?(actor.punchR||0):(actor.punchL||0));
+      const progress=Math.max(0,Math.min(0.999,1-(timer/total)));
+      const impact=len>=5 ? [0,1,2,3,3,4] : null;
+      if(impact){
+        const idx=Math.min(impact.length-1,Math.floor(progress*impact.length));
+        return Math.min(len-1,impact[idx]);
+      }
+      return Math.min(len-1,Math.floor(progress*len));
+    }
     const tier=perfTier();
     const step=state==='walk'?(tier===0?8:tier===1?6:4):(tier===0?10:tier===1?7:5);
     return Math.floor(frameT/step)%len;
@@ -64,7 +75,7 @@
     const c=app.canvas;
     c.id='pixiCanvas';
     c.style.position='absolute';c.style.inset='0';c.style.width='100%';c.style.height='100%';
-    c.style.pointerEvents='none';c.style.zIndex='2';
+    c.style.pointerEvents='none';c.style.zIndex='2';c.style.imageRendering='pixelated';
     const base=document.getElementById('gameCanvas'); if(base) base.style.zIndex='1';
   }
   async function initPixi(){
@@ -125,12 +136,24 @@
     if(!m||!monsterSprite){if(monsterSprite)monsterSprite.visible=false;return;}
     monsterSprite.visible=true;
     const state=monsterState(m), seq=seqForMonster(m.monsterId||selectedMonster,state);
-    if(seq.length) await setSpriteTexture(monsterSprite,seq[frameIndex(seq.length,state)]);
-    monsterSprite.x=m.x-camX+m.w/2;
-    monsterSprite.y=m.y+m.h+3;
+    if(seq.length) await setSpriteTexture(monsterSprite,seq[frameIndex(seq.length,state,m)]);
+    let fx=0, fy=0, rot=0, squash=1;
+    if(String(state).startsWith('attack')){
+      const total=m.punchDuration||24;
+      const timer=state==='attack_r'?(m.punchR||0):(m.punchL||0);
+      const p=Math.max(0,Math.min(1,1-(timer/total)));
+      const dirSign=(m.dir<0?-1:1);
+      fx=dirSign*(p<0.35?6:(p<0.72?14:7));
+      fy=p<0.72?-2:0;
+      rot=(dirSign*(p<0.5?-0.04:0.08));
+      squash=p<0.72?1.04:1;
+    }
+    monsterSprite.x=m.x-camX+m.w/2+fx;
+    monsterSprite.y=m.y+m.h+3+fy;
     const h=m.h*(m.monsterId==='gorak'?1.22:1.28), w=h*0.95;
-    monsterSprite.width=w; monsterSprite.height=h;
+    monsterSprite.width=w*squash; monsterSprite.height=h;
     monsterSprite.scale.x=Math.abs(monsterSprite.scale.x)*(m.dir<0?-1:1);
+    monsterSprite.rotation=rot;
     monsterSprite.alpha=(m.invincible>0&&frameT%6<3)?.35:1;
   }
   async function syncEnemies(){
@@ -166,8 +189,8 @@
 
   const baseDrawMonster=window.drawMonster||drawMonster;
   const baseDrawEnemies=window.drawEnemies||drawEnemies;
-  drawMonster=function(){if(!pixiReady)return;baseDrawMonster();};
-  drawEnemies=function(){if(!pixiReady)return;baseDrawEnemies();};
+  drawMonster=function(){if(pixiReady)return;baseDrawMonster();};
+  drawEnemies=function(){if(pixiReady)return;baseDrawEnemies();};
 
   const baseRender=render;
   render=function(){

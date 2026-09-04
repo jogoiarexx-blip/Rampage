@@ -1,0 +1,22 @@
+/* RAMPAGE 1.5.4 — MAIN MENU REWORK */
+(()=>{
+  const baseMenu154=showMainMenu;
+  const themeThumb=['downtown','industrial','military','port','megacity','omega','nuclear','omega','frozen','omega'];
+  function qualityName(){return progress.quality==='auto'?`AUTO · ${({low:'LEVE',medium:'MÉDIO',high:'FORTE'}[effectiveQuality]||effectiveQuality)}`:({low:'LEVE',medium:'MÉDIO',high:'FORTE'}[effectiveQuality]||effectiveQuality);}
+  showMainMenu=function(){
+    gameState=GameState.MENU;paused=true;pausedFrameDrawn=true;clearHeldInputs();suspendGameAudio();upgradeOpen=false;
+    document.getElementById('pause-btn').style.display='none';document.getElementById('mission-card').style.display='none';document.getElementById('boss-wrap').style.display='none';carryIndicator.style.display='none';loadingScreen.classList.remove('show');
+    selectedLevel=Math.min(selectedLevel||1,LEVELS.length);
+    const ov=document.getElementById('overlay');ov.style.display='flex';ov.classList.add('main-menu-v154');
+    const def=monsterDef(); const lvl=LEVELS[selectedLevel-1];
+    const monsterCards=Object.values(MONSTERS).map(m=>{const unlocked=monsterUnlocked(m.id),sel=selectedMonster===m.id;return `<button class="hero-monster ${sel?'selected':''} ${unlocked?'':'locked'}" data-monster="${m.id}" ${unlocked?'':'disabled'}><span>${unlocked?m.icon:'🔒'}</span><div><b>${m.name}</b><small>${m.tag}</small></div></button>`;}).join('');
+    const phaseCards=LEVELS.map((l,i)=>{const n=i+1,locked=n>(progress.unlocked||1),st=progress.stars[String(n)]||0;return `<button class="phase-thumb ${selectedLevel===n?'selected':''} ${locked?'locked':''}" data-phase="${n}" ${locked?'disabled':''}><img src="assets/buildings/${themeThumb[i]}_intact.webp" alt=""><div><b>${n}</b><span>${locked?'BLOQUEADA':l.name}</span><small>${'★'.repeat(st)}${'☆'.repeat(3-st)}</small></div></button>`;}).join('');
+    ov.innerHTML=`<div class="menu-shell"><section class="menu-hero"><div class="menu-brand"><div class="menu-kicker">MONSTER DESTRUCTION</div><div class="ov-title">RAMPAGE</div><div class="menu-version">v${RAMPAGE_VERSION} · PIXIJS · ${qualityName()}</div></div><div class="menu-hero-copy"><span class="hero-badge">FASE ${selectedLevel}/10</span><h2>${lvl.name}</h2><p>${lvl.objective}</p><div class="hero-stats"><span>MONSTRO <b>${def.name}</b></span><span>VIDA <b>${def.hp}</b></span><span>FORÇA <b>${Math.round(def.damage*100)}%</b></span></div></div><button class="ov-btn hero-play" id="playBtn">DESTRUIR AGORA</button></section><section class="menu-panel"><div class="panel-title"><b>MONSTRO</b><span>Escolha seu estilo</span></div><div class="hero-monsters">${monsterCards}</div><div class="panel-title phase-title"><b>CIDADES</b><span>Progresso da campanha</span></div><div class="phase-strip">${phaseCards}</div><div class="menu-actions menu-actions-pro"><button class="ov-small-btn" id="galleryBtn">GALERIA / SKINS</button><button class="ov-small-btn" id="graphicsBtn">VÍDEO</button><button class="ov-small-btn" id="controlsBtn">CONTROLES</button><button class="ov-small-btn" id="audioBtn">SOM: ${progress.audio?'LIGADO':'DESLIGADO'}</button><button class="ov-small-btn danger" id="resetBtn">ZERAR PROGRESSO</button></div><div class="save-badge">Campanhas concluídas: ${progress.totalWins||0} · Fases liberadas: ${progress.unlocked||1}/10 · Configurações salvas localmente</div></section></div>`;
+    ov.querySelectorAll('[data-monster]').forEach(c=>c.onclick=()=>{selectedMonster=c.dataset.monster;progress.selectedMonster=selectedMonster;saveProgress();showMainMenu();});
+    ov.querySelectorAll('[data-phase]').forEach(c=>c.onclick=()=>{selectedLevel=+c.dataset.phase;showMainMenu();});
+    ov.querySelector('#playBtn').onclick=()=>startSelectedPhase(selectedLevel);ov.querySelector('#galleryBtn').onclick=showGallery;ov.querySelector('#graphicsBtn').onclick=showGraphics;ov.querySelector('#controlsBtn').onclick=()=>showControlsConfig('keyboard');
+    ov.querySelector('#audioBtn').onclick=()=>{progress.audio=!progress.audio;saveProgress();if(progress.audio)ensureAudio();showMainMenu();};
+    ov.querySelector('#resetBtn').onclick=()=>{if(confirm('Apagar todo o progresso?')){progress=defaultSave();progress.version=RAMPAGE_VERSION;progress.quality='auto';saveProgress();selectedLevel=1;selectedMonster='brutus';showMainMenu();}};
+  };
+  setTimeout(()=>{if(gameState===GameState.MENU)showMainMenu();},0);
+})();

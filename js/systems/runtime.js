@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
    RAMPAGE 1.3 — REAL GRAPHICS, STATE MACHINE, LOADING & PAUSE
    ═══════════════════════════════════════════════════════════════ */
-const RAMPAGE_VERSION='1.5.1';
+const RAMPAGE_VERSION='1.5.4';
 const GameState=Object.freeze({MENU:'menu',LOADING:'loading',PLAYING:'playing',PAUSED:'paused',RESULT:'result',GAMEOVER:'gameover'});
 let gameState=GameState.MENU;
 let effectiveQuality='medium';

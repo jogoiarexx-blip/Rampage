@@ -190,3 +190,54 @@ body{--hud-glass:rgba(4,8,14,.78)}
 
 #pixiCanvas{image-rendering:auto;}
 .quality-low #pixiCanvas{image-rendering:pixelated;}
+
+/* ═══════════════════════════════════════════════════════════════
+   RAMPAGE 1.5.2 — CONTROLS / RESOLUTION UI
+   ═══════════════════════════════════════════════════════════════ */
+.tabs-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:6px 0 10px}
+.tabs-row .ov-small-btn.selected,.menu-actions .ov-small-btn.selected,.settings-grid button.selected{border-color:#55ccff;color:#8de7ff;background:#10202b}
+.bind-grid{display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:10px;width:min(760px,94vw);margin:8px auto 12px}
+.bind-btn{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(20,24,32,.95),rgba(10,12,18,.98));color:#d7e1e8;cursor:pointer;font-family:'Boogaloo',sans-serif;text-align:left;min-height:56px}
+.bind-btn span{font-size:13px;color:#8ea0ae;line-height:1.2}
+.bind-btn b{font:18px 'Bebas Neue',sans-serif;letter-spacing:2px;color:#fff;white-space:nowrap}
+.bind-btn:hover,.bind-btn:active{transform:translateY(-2px);border-color:#ff8b2a;box-shadow:0 8px 20px rgba(255,120,0,.14)}
+.control-section-title{font:12px 'Bebas Neue',sans-serif;letter-spacing:4px;color:#93a9ba;margin:8px 0 3px;text-align:center}
+.small-grid{width:min(620px,92vw)}
+@media(max-width:700px){.bind-grid{grid-template-columns:1fr}}
+
+/* ═══════════════════════════════════════════════════════════════
+   RAMPAGE 1.5.3 — PROFESSIONAL VIDEO / CONTROL MENUS
+   ═══════════════════════════════════════════════════════════════ */
+.compact-title{font-size:54px!important}
+.controls-hint{font:14px 'Boogaloo',sans-serif;color:#9fb1bd;text-align:center;margin:6px 0 12px;min-height:22px}
+.controls-hint b{color:#fff}
+.gamepad-device{width:min(760px,94vw);display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:12px;padding:12px 14px;border:1px solid rgba(255,255,255,.10);border-radius:12px;background:linear-gradient(180deg,rgba(16,20,28,.96),rgba(7,9,14,.98));margin:4px auto 12px}
+.gamepad-device.connected{border-color:rgba(80,255,150,.26);box-shadow:0 0 24px rgba(40,255,120,.06)}
+.gamepad-icon{font-size:32px;text-align:center}.gamepad-device b{display:block;color:#fff;font:18px 'Bebas Neue';letter-spacing:1.5px}.gamepad-device small{display:block;color:#778795;font:11px 'Boogaloo';margin-top:2px}.gamepad-device>span{font:10px 'Bebas Neue';letter-spacing:2px;color:#667}.gamepad-device.connected>span{color:#69e59a}
+.bind-grid{grid-template-columns:repeat(2,minmax(260px,1fr));max-height:43vh;overflow:auto;padding:2px 4px 8px}
+.bind-btn{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:10px 12px;text-align:left}
+.bind-icon{font-size:24px;text-align:center;filter:drop-shadow(0 0 8px rgba(255,180,60,.16))}.bind-copy{display:flex;flex-direction:column;min-width:0}.bind-copy small{font:11px 'Boogaloo';color:#8394a2}.bind-copy b{font:19px 'Bebas Neue';color:#fff;letter-spacing:1.5px}.bind-btn i{font:9px 'Bebas Neue';font-style:normal;letter-spacing:1.5px;color:#5f7180}
+.video-panel{width:min(760px,94vw);background:linear-gradient(180deg,rgba(10,15,23,.92),rgba(4,7,11,.97));border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.video-panel .settings-grid{width:100%;margin:7px 0 12px}.video-panel .settings-grid button,.resolution-grid button{border-radius:9px;min-height:60px}.video-panel button b,.resolution-grid button b{display:block;font:17px 'Bebas Neue';letter-spacing:1.5px}.video-panel button small,.resolution-grid button small{display:block;font:10px 'Boogaloo';color:#71808d;margin-top:3px}.video-panel button.selected small,.resolution-grid button.selected small{color:#88bed0}
+.resolution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:7px 0 12px}.resolution-grid button{padding:10px;border:1px solid #353b43;background:#11161c;color:#aeb8bf}.resolution-grid button.selected{border-color:#55ccff;color:#8de7ff;background:#10202b;box-shadow:inset 0 0 20px rgba(60,180,255,.05)}
+.fullscreen-card{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 12px;border:1px solid rgba(255,255,255,.10);border-radius:10px;background:rgba(255,255,255,.025);margin-top:7px}.fullscreen-card b{display:block;font:16px 'Bebas Neue';letter-spacing:1.5px;color:#fff}.fullscreen-card small{display:block;font:11px 'Boogaloo';color:#758591}.fullscreen-card button{padding:9px 12px;border:1px solid #48515a;border-radius:7px;background:#161c22;color:#aeb7bf;font:12px 'Bebas Neue';letter-spacing:1.2px}.fullscreen-card button.selected{border-color:#69e59a;color:#9fffc4;background:#112119}
+.video-status{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:12px}.video-status span{padding:8px;border-radius:7px;background:rgba(255,255,255,.035);text-align:center;font:8px 'Bebas Neue';letter-spacing:1.5px;color:#5e6d79}.video-status b{display:block!important;margin-top:3px;color:#cdd9df!important;font-size:13px!important}
+@media(max-width:700px){.bind-grid{grid-template-columns:1fr;max-height:48vh}.resolution-grid{grid-template-columns:repeat(2,1fr)}.video-status{grid-template-columns:repeat(2,1fr)}.fullscreen-card{align-items:flex-start;flex-direction:column}.gamepad-device{grid-template-columns:44px 1fr}.gamepad-device>span{grid-column:2}.compact-title{font-size:44px!important}}
+
+/* ═══════════════════════════════════════════════════════════════
+   RAMPAGE 1.5.4 — MAIN MENU REWORK
+   ═══════════════════════════════════════════════════════════════ */
+.main-menu-v154{justify-content:flex-start!important;padding:18px!important;background:radial-gradient(circle at 72% 22%,rgba(60,24,10,.55),transparent 34%),linear-gradient(145deg,#05080d 0%,#090d14 52%,#130704 100%)!important}
+.menu-shell{width:min(1180px,96vw);margin:auto;display:grid;grid-template-columns:minmax(320px,.82fr) minmax(480px,1.35fr);gap:18px;align-items:stretch}
+.menu-hero,.menu-panel{border:1px solid rgba(255,255,255,.09);background:linear-gradient(180deg,rgba(10,15,22,.94),rgba(5,8,13,.98));border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.48);position:relative;overflow:hidden}
+.menu-hero{min-height:610px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;background:radial-gradient(circle at 58% 26%,rgba(255,82,24,.18),transparent 28%),linear-gradient(165deg,#111a25,#080a0f 54%,#160904)}
+.menu-hero:before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.018) 39px 40px),linear-gradient(180deg,transparent 50%,rgba(255,52,14,.06));pointer-events:none}
+.menu-brand{position:absolute;left:28px;top:26px;z-index:2}.menu-brand .ov-title{font-size:clamp(66px,8vw,104px);text-align:left;line-height:.78}.menu-kicker{font:11px 'Bebas Neue';letter-spacing:6px;color:#95a5b2;margin-bottom:10px}.menu-version{font:11px 'Boogaloo';color:#6f8190;margin-top:12px;letter-spacing:1px}
+.menu-hero-copy{position:relative;z-index:2;padding:20px;border:1px solid rgba(255,142,45,.16);border-radius:13px;background:linear-gradient(180deg,rgba(8,10,15,.7),rgba(8,10,15,.92));backdrop-filter:blur(8px)}
+.hero-badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#ff6c1f;color:#160a04;font:11px 'Bebas Neue';letter-spacing:2px}.menu-hero-copy h2{font:34px 'Bebas Neue';letter-spacing:2px;color:#fff;margin:8px 0 2px}.menu-hero-copy p{font:14px 'Boogaloo';color:#92a0ac;line-height:1.35}.hero-stats{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.hero-stats span{padding:6px 8px;border:1px solid rgba(255,255,255,.08);border-radius:7px;background:rgba(255,255,255,.035);font:9px 'Bebas Neue';letter-spacing:1px;color:#647582}.hero-stats b{display:block;color:#e6edf2;font-size:14px;margin-top:2px}.hero-play{position:relative;z-index:2;width:100%;margin-top:12px!important;clip-path:none!important;border-radius:10px!important}
+.menu-panel{padding:20px 20px 16px;display:flex;flex-direction:column;min-height:610px}.panel-title{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07);padding-bottom:8px;margin-bottom:10px}.panel-title b{font:20px 'Bebas Neue';letter-spacing:3px;color:#fff}.panel-title span{font:11px 'Boogaloo';color:#637381}.phase-title{margin-top:17px}
+.hero-monsters{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.hero-monster{min-height:72px;border:1px solid rgba(255,255,255,.09);border-radius:10px;background:#0c1118;color:#fff;display:flex;align-items:center;gap:9px;padding:10px;cursor:pointer;text-align:left;transition:.15s}.hero-monster>span{font-size:25px}.hero-monster b{display:block;font:18px 'Bebas Neue';letter-spacing:2px}.hero-monster small{color:#6e8291;font:11px 'Boogaloo'}.hero-monster.selected{border-color:#ff7827;background:linear-gradient(180deg,rgba(255,102,20,.14),rgba(13,17,24,.95));box-shadow:0 0 18px rgba(255,90,15,.12)}.hero-monster.locked{opacity:.35;cursor:not-allowed}
+.phase-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;overflow:auto;padding-right:3px;max-height:330px}.phase-thumb{position:relative;overflow:hidden;height:76px;border-radius:9px;border:1px solid rgba(255,255,255,.08);background:#0b1016;color:#fff;cursor:pointer;text-align:left;display:flex;align-items:center}.phase-thumb img{width:62px;height:76px;object-fit:cover;object-position:center 75%;image-rendering:pixelated;opacity:.7;border-right:1px solid rgba(255,255,255,.07)}.phase-thumb div{padding:7px 8px;min-width:0}.phase-thumb b{font:20px 'Bebas Neue';color:#ff9b43;margin-right:5px}.phase-thumb span{font:13px 'Bebas Neue';letter-spacing:1px;color:#d9e2e8;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.phase-thumb small{font:10px 'Boogaloo';color:#e0bd54}.phase-thumb.selected{border-color:#ff7b28;background:rgba(255,91,13,.09);box-shadow:inset 0 0 0 1px rgba(255,125,40,.12)}.phase-thumb.locked{filter:grayscale(1);opacity:.33;cursor:not-allowed}
+.menu-actions-pro{margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.07)}.menu-actions-pro .danger{border-color:rgba(255,65,65,.22);color:#c77878}
+@media(max-width:900px){.main-menu-v154{padding:8px!important}.menu-shell{grid-template-columns:1fr;max-width:720px}.menu-hero{min-height:310px;padding:20px}.menu-brand{position:relative;left:auto;top:auto;margin-bottom:60px}.menu-brand .ov-title{font-size:70px}.menu-panel{min-height:auto}.phase-strip{max-height:260px}}
+@media(max-width:560px){.hero-monsters{grid-template-columns:1fr}.phase-strip{grid-template-columns:1fr}.menu-hero{min-height:360px}.menu-brand{margin-bottom:40px}.menu-hero-copy h2{font-size:27px}.menu-panel{padding:14px}.menu-actions-pro{gap:5px}.menu-actions-pro .ov-small-btn{font-size:10px;padding:7px 9px}}

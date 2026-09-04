@@ -5,7 +5,7 @@ function getBoss(){return enemies?enemies.find(e=>!e.dead&&e.type==='boss'):null
 function makeMonster(){
   return{x:120,y:0,w:48,h:88,vx:0,vy:0,onGround:false,
     dir:1,hp:100,maxHp:100,
-    punchL:0,punchR:0,punchDmgL:false,punchDmgR:false,
+    punchL:0,punchR:0,punchDmgL:false,punchDmgR:false,punchDuration:24,
     smashTimer:0,climbing:false,climbBuilding:null,
     frame:0,frameTimer:0,crouching:false,
     knockback:0,invincible:0,rage:0,rageCooldown:0,
@@ -263,8 +263,8 @@ function updateMonster(dt){
 
   if((keys['ArrowUp']||keys['KeyJ'])&&m.onGround&&!crouching&&!m.climbing){m.vy=-15;m.onGround=false;spawnParticles(m.x+m.w/2,GROUND,6,'#888',3,4,'spark');}
   if((keys['ArrowUp']||keys['KeyJ'])&&m.climbing){m.climbing=false;m.climbBuilding=null;m.vy=-10;m.vx=m.dir*3;}
-  if(keys['KeyZ']&&m.punchL<=0){m.punchL=20;m.punchDmgL=false;}
-  if(keys['KeyX']&&m.punchR<=0){m.punchR=20;m.punchDmgR=false;}
+  if(keys['KeyZ']&&m.punchL<=0){m.punchL=m.punchDuration||24;m.punchDmgL=false;}
+  if(keys['KeyX']&&m.punchR<=0){m.punchR=m.punchDuration||24;m.punchDmgR=false;}
   if(keys['KeyS']&&m.smashTimer<=0&&m.onGround){m.smashTimer=30;doSmash(m);}
   // ROAR ability
   if(keys['KeyE']&&m.roarCooldown<=0){doRoar(m);}
@@ -326,7 +326,10 @@ function doRoar(m){
 
 /* ── PUNCH BUILDINGS ── */
 function tryPunch(m,side,timer,dmgDone,setDone){
-  if(timer<=0||dmgDone||timer<12)return;
+  const total=m.punchDuration||24;
+  if(timer<=0||dmgDone)return;
+  const activeStart=total*0.32, activeEnd=total*0.72;
+  if(timer<activeStart||timer>activeEnd)return;
   const crouching=m.crouching;
   const punchY=crouching?m.y+m.h-25:m.y+24;
   const reach=54;
@@ -406,7 +409,10 @@ function tryPunchEnemies(m){
     const px=m.dir===1?m.x+m.w+10:m.x-10;
     const py=m.y+m.h*0.4;
     if(Math.abs((e.x+e.w/2)-px)<reach&&Math.abs((e.y+e.h/2)-py)<55){
-      const punching=(m.punchL>12&&!m.punchDmgL)||(m.punchR>12&&!m.punchDmgR);
+      const total=m.punchDuration||24;
+      const leftActive=(m.punchL>=total*0.32&&m.punchL<=total*0.72&&!m.punchDmgL);
+      const rightActive=(m.punchR>=total*0.32&&m.punchR<=total*0.72&&!m.punchDmgR);
+      const punching=leftActive||rightActive;
       if(punching){
         const dmg=32*(m.rage>0?2:1)*(m.dmgMult||1);
         e.hp-=dmg;e.vx=m.dir*5;e.vy=-4;
