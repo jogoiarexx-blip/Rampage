@@ -1,0 +1,632 @@
+{
+  "version": "1.5.1",
+  "base": "assets/sprites_v2",
+  "players": {
+    "brutus": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_00.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_01.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_02.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_03.webp",
+            "assets/sprites_v2/player/brutus/idle/brutus_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_00.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_01.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_02.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_03.webp",
+            "assets/sprites_v2/player/brutus/walk/brutus_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "punch_combo": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_00.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_01.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_02.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_03.webp",
+            "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "ground_slam": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_00.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_01.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_02.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_03.webp",
+            "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "grab_throw": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_00.webp",
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_01.webp",
+            "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_02.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "hurt_defeat": {
+          "frames": [
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_00.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_01.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_02.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_03.webp",
+            "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_04.webp"
+          ],
+          "fps": 7,
+          "loop": false
+        }
+      }
+    },
+    "gorak": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_00.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_01.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_02.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_03.webp",
+            "assets/sprites_v2/player/gorak/idle/gorak_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_00.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_01.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_02.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_03.webp",
+            "assets/sprites_v2/player/gorak/walk/gorak_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "claw_attack": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_00.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_01.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_02.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_03.webp",
+            "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "tail_swipe": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_00.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_01.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_02.webp",
+            "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_03.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        },
+        "body_slam": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_00.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_01.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_02.webp",
+            "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_03.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "breath_charge": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_00.webp",
+            "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_01.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "defeat": {
+          "frames": [
+            "assets/sprites_v2/player/gorak/defeat/gorak_defeat_00.webp"
+          ],
+          "fps": 6,
+          "loop": false
+        }
+      }
+    },
+    "volt": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/player/volt/idle/volt_idle_00.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_01.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_02.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_03.webp",
+            "assets/sprites_v2/player/volt/idle/volt_idle_04.webp"
+          ],
+          "fps": 5,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/player/volt/walk/volt_walk_00.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_01.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_02.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_03.webp",
+            "assets/sprites_v2/player/volt/walk/volt_walk_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "claw_combo": {
+          "frames": [
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_00.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_01.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_02.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_03.webp",
+            "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_04.webp"
+          ],
+          "fps": 12,
+          "loop": true
+        },
+        "leap_attack": {
+          "frames": [
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_00.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_01.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_02.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_03.webp",
+            "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "grab_throw": {
+          "frames": [
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_00.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_01.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_02.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_03.webp",
+            "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_04.webp"
+          ],
+          "fps": 9,
+          "loop": true
+        },
+        "roar_charge": {
+          "frames": [
+            "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_00.webp",
+            "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_01.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        },
+        "hurt_defeat": {
+          "frames": [
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_00.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_01.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_02.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_03.webp",
+            "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_04.webp"
+          ],
+          "fps": 7,
+          "loop": false
+        }
+      }
+    }
+  },
+  "enemies": {
+    "civilian": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "run": {
+          "frames": [
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_00.webp",
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_01.webp",
+            "assets/sprites_v2/enemies/civilian/run/civilian_run_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "soldier": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "shoot": {
+          "frames": [
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_00.webp",
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_01.webp",
+            "assets/sprites_v2/enemies/soldier/shoot/soldier_shoot_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "rocket_trooper": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "attack": {
+          "frames": [
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_00.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_01.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_02.webp",
+            "assets/sprites_v2/enemies/rocket_trooper/attack/rocket_trooper_attack_03.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "jeep": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "move": {
+          "frames": [
+            "assets/sprites_v2/enemies/jeep/move/jeep_move_00.webp",
+            "assets/sprites_v2/enemies/jeep/move/jeep_move_01.webp"
+          ],
+          "fps": 6,
+          "loop": true
+        }
+      }
+    },
+    "helicopter": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "fly": {
+          "frames": [
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_00.webp",
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_01.webp",
+            "assets/sprites_v2/enemies/helicopter/fly/helicopter_fly_02.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        }
+      }
+    },
+    "drone": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "hover": {
+          "frames": [
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_00.webp",
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_01.webp",
+            "assets/sprites_v2/enemies/drone/hover/drone_hover_02.webp"
+          ],
+          "fps": 8,
+          "loop": true
+        }
+      }
+    },
+    "tank": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "move": {
+          "frames": [
+            "assets/sprites_v2/enemies/tank/move/tank_move_00.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_01.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_02.webp",
+            "assets/sprites_v2/enemies/tank/move/tank_move_03.webp"
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "fire": {
+          "frames": [
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_00.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_01.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_02.webp",
+            "assets/sprites_v2/enemies/tank/fire/tank_fire_03.webp"
+          ],
+          "fps": 9,
+          "loop": false
+        }
+      }
+    }
+  },
+  "bosses": {
+    "omega_prime": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "idle": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_01.webp",
+            "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_02.webp",
+            "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_03.webp",
+            "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_04.webp"
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "walk": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_01.webp",
+            "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_02.webp",
+            "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_03.webp",
+            "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_04.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        },
+        "cannon_fire": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_01.webp",
+            "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_02.webp",
+            "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_03.webp",
+            "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "missile_barrage": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_01.webp",
+            "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_02.webp",
+            "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_03.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "melee_slam": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_01.webp",
+            "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_02.webp",
+            "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_03.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "hurt_destroy": {
+          "frames": [
+            "assets/sprites_v2/bosses/omega_prime/hurt_destroy/omega_prime_hurt_destroy_00.webp",
+            "assets/sprites_v2/bosses/omega_prime/hurt_destroy/omega_prime_hurt_destroy_01.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        }
+      }
+    },
+    "air_fortress": {
+      "anchor": [
+        0.5,
+        1.0
+      ],
+      "animations": {
+        "hover": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_03.webp",
+            "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_04.webp"
+          ],
+          "fps": 7,
+          "loop": true
+        },
+        "strafe": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_03.webp",
+            "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_04.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        },
+        "cannon_fire": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_03.webp",
+            "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "missile_launch": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_03.webp",
+            "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        },
+        "damaged": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_03.webp"
+          ],
+          "fps": 10,
+          "loop": true
+        },
+        "destruction": {
+          "frames": [
+            "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_00.webp",
+            "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_01.webp",
+            "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_02.webp",
+            "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_03.webp",
+            "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_04.webp"
+          ],
+          "fps": 10,
+          "loop": false
+        }
+      }
+    }
+  },
+  "effects": {
+    "combat_fx_00": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_00.webp"
+    },
+    "combat_fx_01": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_01.webp"
+    },
+    "combat_fx_02": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_02.webp"
+    },
+    "combat_fx_03": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_03.webp"
+    },
+    "combat_fx_04": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_04.webp"
+    },
+    "combat_fx_05": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_05.webp"
+    },
+    "combat_fx_06": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_06.webp"
+    },
+    "combat_fx_07": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_07.webp"
+    },
+    "combat_fx_08": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_08.webp"
+    },
+    "combat_fx_09": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_09.webp"
+    },
+    "combat_fx_10": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_10.webp"
+    },
+    "combat_fx_11": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_11.webp"
+    },
+    "combat_fx_12": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_12.webp"
+    },
+    "combat_fx_13": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_13.webp"
+    },
+    "combat_fx_14": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_14.webp"
+    },
+    "combat_fx_15": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_15.webp"
+    },
+    "combat_fx_16": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_16.webp"
+    },
+    "combat_fx_17": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_17.webp"
+    },
+    "combat_fx_18": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_18.webp"
+    },
+    "combat_fx_19": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_19.webp"
+    },
+    "combat_fx_20": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_20.webp"
+    },
+    "combat_fx_21": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_21.webp"
+    },
+    "combat_fx_22": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_22.webp"
+    },
+    "combat_fx_23": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_23.webp"
+    },
+    "combat_fx_24": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_24.webp"
+    },
+    "combat_fx_25": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_25.webp"
+    },
+    "combat_fx_26": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_26.webp"
+    },
+    "combat_fx_27": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_27.webp"
+    },
+    "combat_fx_28": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_28.webp"
+    },
+    "combat_fx_29": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_29.webp"
+    },
+    "combat_fx_30": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_30.webp"
+    },
+    "combat_fx_31": {
+      "file": "assets/sprites_v2/effects/combat/combat_fx_31.webp"
+    }
+  },
+  "atlases": {
+    "players": {
+      "image": "assets/sprites_v2/atlases/players.png",
+      "data": "assets/sprites_v2/atlases/players.json",
+      "frames": 86
+    },
+    "enemies": {
+      "image": "assets/sprites_v2/atlases/enemies.png",
+      "data": "assets/sprites_v2/atlases/enemies.json",
+      "frames": 26
+    },
+    "bosses": {
+      "image": "assets/sprites_v2/atlases/bosses.png",
+      "data": "assets/sprites_v2/atlases/bosses.json",
+      "frames": 54
+    },
+    "effects": {
+      "image": "assets/sprites_v2/atlases/effects.png",
+      "data": "assets/sprites_v2/atlases/effects.json",
+      "frames": 32
+    }
+  }
+}
