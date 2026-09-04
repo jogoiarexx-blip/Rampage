@@ -1,0 +1,496 @@
+{
+  "meta": {
+    "image": "assets/sprites_v2/atlases/bosses.png",
+    "version": "1.5.1",
+    "format": "RGBA8888",
+    "scale": "1"
+  },
+  "frames": {
+    "omega_prime_idle_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 201,
+        "h": 223
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_00.webp"
+    },
+    "omega_prime_idle_01.webp": {
+      "frame": {
+        "x": 205,
+        "y": 2,
+        "w": 198,
+        "h": 219
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_01.webp"
+    },
+    "omega_prime_idle_02.webp": {
+      "frame": {
+        "x": 405,
+        "y": 2,
+        "w": 200,
+        "h": 217
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_02.webp"
+    },
+    "omega_prime_idle_03.webp": {
+      "frame": {
+        "x": 607,
+        "y": 2,
+        "w": 202,
+        "h": 221
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_03.webp"
+    },
+    "omega_prime_idle_04.webp": {
+      "frame": {
+        "x": 811,
+        "y": 2,
+        "w": 190,
+        "h": 218
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/idle/omega_prime_idle_04.webp"
+    },
+    "omega_prime_walk_00.webp": {
+      "frame": {
+        "x": 1003,
+        "y": 2,
+        "w": 203,
+        "h": 220
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_00.webp"
+    },
+    "omega_prime_walk_01.webp": {
+      "frame": {
+        "x": 1208,
+        "y": 2,
+        "w": 200,
+        "h": 222
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_01.webp"
+    },
+    "omega_prime_walk_02.webp": {
+      "frame": {
+        "x": 1410,
+        "y": 2,
+        "w": 198,
+        "h": 221
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_02.webp"
+    },
+    "omega_prime_walk_03.webp": {
+      "frame": {
+        "x": 1610,
+        "y": 2,
+        "w": 204,
+        "h": 221
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_03.webp"
+    },
+    "omega_prime_walk_04.webp": {
+      "frame": {
+        "x": 1816,
+        "y": 2,
+        "w": 197,
+        "h": 220
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/walk/omega_prime_walk_04.webp"
+    },
+    "omega_prime_cannon_fire_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 227,
+        "w": 208,
+        "h": 147
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_00.webp"
+    },
+    "omega_prime_cannon_fire_01.webp": {
+      "frame": {
+        "x": 212,
+        "y": 227,
+        "w": 200,
+        "h": 147
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_01.webp"
+    },
+    "omega_prime_cannon_fire_02.webp": {
+      "frame": {
+        "x": 414,
+        "y": 227,
+        "w": 204,
+        "h": 149
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_02.webp"
+    },
+    "omega_prime_cannon_fire_03.webp": {
+      "frame": {
+        "x": 620,
+        "y": 227,
+        "w": 199,
+        "h": 148
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_03.webp"
+    },
+    "omega_prime_cannon_fire_04.webp": {
+      "frame": {
+        "x": 821,
+        "y": 227,
+        "w": 196,
+        "h": 148
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/cannon_fire/omega_prime_cannon_fire_04.webp"
+    },
+    "omega_prime_missile_barrage_00.webp": {
+      "frame": {
+        "x": 1019,
+        "y": 227,
+        "w": 216,
+        "h": 235
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_00.webp"
+    },
+    "omega_prime_missile_barrage_01.webp": {
+      "frame": {
+        "x": 1237,
+        "y": 227,
+        "w": 216,
+        "h": 236
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_01.webp"
+    },
+    "omega_prime_missile_barrage_02.webp": {
+      "frame": {
+        "x": 1455,
+        "y": 227,
+        "w": 228,
+        "h": 236
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_02.webp"
+    },
+    "omega_prime_missile_barrage_03.webp": {
+      "frame": {
+        "x": 1685,
+        "y": 227,
+        "w": 221,
+        "h": 236
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/missile_barrage/omega_prime_missile_barrage_03.webp"
+    },
+    "omega_prime_melee_slam_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 465,
+        "w": 205,
+        "h": 234
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_00.webp"
+    },
+    "omega_prime_melee_slam_01.webp": {
+      "frame": {
+        "x": 209,
+        "y": 465,
+        "w": 209,
+        "h": 230
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_01.webp"
+    },
+    "omega_prime_melee_slam_02.webp": {
+      "frame": {
+        "x": 420,
+        "y": 465,
+        "w": 231,
+        "h": 222
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_02.webp"
+    },
+    "omega_prime_melee_slam_03.webp": {
+      "frame": {
+        "x": 653,
+        "y": 465,
+        "w": 232,
+        "h": 212
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/melee_slam/omega_prime_melee_slam_03.webp"
+    },
+    "omega_prime_hurt_destroy_00.webp": {
+      "frame": {
+        "x": 887,
+        "y": 465,
+        "w": 200,
+        "h": 188
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/hurt_destroy/omega_prime_hurt_destroy_00.webp"
+    },
+    "omega_prime_hurt_destroy_01.webp": {
+      "frame": {
+        "x": 1089,
+        "y": 465,
+        "w": 181,
+        "h": 179
+      },
+      "source": "assets/sprites_v2/bosses/omega_prime/hurt_destroy/omega_prime_hurt_destroy_01.webp"
+    },
+    "air_fortress_hover_00.webp": {
+      "frame": {
+        "x": 1272,
+        "y": 465,
+        "w": 247,
+        "h": 131
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_00.webp"
+    },
+    "air_fortress_hover_01.webp": {
+      "frame": {
+        "x": 1521,
+        "y": 465,
+        "w": 245,
+        "h": 131
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_01.webp"
+    },
+    "air_fortress_hover_02.webp": {
+      "frame": {
+        "x": 1768,
+        "y": 465,
+        "w": 240,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_02.webp"
+    },
+    "air_fortress_hover_03.webp": {
+      "frame": {
+        "x": 2,
+        "y": 701,
+        "w": 248,
+        "h": 131
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_03.webp"
+    },
+    "air_fortress_hover_04.webp": {
+      "frame": {
+        "x": 252,
+        "y": 701,
+        "w": 250,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/hover/air_fortress_hover_04.webp"
+    },
+    "air_fortress_strafe_00.webp": {
+      "frame": {
+        "x": 504,
+        "y": 701,
+        "w": 251,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_00.webp"
+    },
+    "air_fortress_strafe_01.webp": {
+      "frame": {
+        "x": 757,
+        "y": 701,
+        "w": 246,
+        "h": 129
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_01.webp"
+    },
+    "air_fortress_strafe_02.webp": {
+      "frame": {
+        "x": 1005,
+        "y": 701,
+        "w": 250,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_02.webp"
+    },
+    "air_fortress_strafe_03.webp": {
+      "frame": {
+        "x": 1257,
+        "y": 701,
+        "w": 250,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_03.webp"
+    },
+    "air_fortress_strafe_04.webp": {
+      "frame": {
+        "x": 1509,
+        "y": 701,
+        "w": 251,
+        "h": 130
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/strafe/air_fortress_strafe_04.webp"
+    },
+    "air_fortress_cannon_fire_00.webp": {
+      "frame": {
+        "x": 1762,
+        "y": 701,
+        "w": 247,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_00.webp"
+    },
+    "air_fortress_cannon_fire_01.webp": {
+      "frame": {
+        "x": 2,
+        "y": 834,
+        "w": 267,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_01.webp"
+    },
+    "air_fortress_cannon_fire_02.webp": {
+      "frame": {
+        "x": 271,
+        "y": 834,
+        "w": 270,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_02.webp"
+    },
+    "air_fortress_cannon_fire_03.webp": {
+      "frame": {
+        "x": 543,
+        "y": 834,
+        "w": 268,
+        "h": 117
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_03.webp"
+    },
+    "air_fortress_cannon_fire_04.webp": {
+      "frame": {
+        "x": 813,
+        "y": 834,
+        "w": 265,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/cannon_fire/air_fortress_cannon_fire_04.webp"
+    },
+    "air_fortress_missile_launch_00.webp": {
+      "frame": {
+        "x": 1080,
+        "y": 834,
+        "w": 246,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_00.webp"
+    },
+    "air_fortress_missile_launch_01.webp": {
+      "frame": {
+        "x": 1328,
+        "y": 834,
+        "w": 270,
+        "h": 119
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_01.webp"
+    },
+    "air_fortress_missile_launch_02.webp": {
+      "frame": {
+        "x": 1600,
+        "y": 834,
+        "w": 274,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_02.webp"
+    },
+    "air_fortress_missile_launch_03.webp": {
+      "frame": {
+        "x": 2,
+        "y": 955,
+        "w": 279,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_03.webp"
+    },
+    "air_fortress_missile_launch_04.webp": {
+      "frame": {
+        "x": 283,
+        "y": 955,
+        "w": 273,
+        "h": 119
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/missile_launch/air_fortress_missile_launch_04.webp"
+    },
+    "air_fortress_damaged_00.webp": {
+      "frame": {
+        "x": 558,
+        "y": 955,
+        "w": 260,
+        "h": 136
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_00.webp"
+    },
+    "air_fortress_damaged_01.webp": {
+      "frame": {
+        "x": 820,
+        "y": 955,
+        "w": 257,
+        "h": 134
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_01.webp"
+    },
+    "air_fortress_damaged_02.webp": {
+      "frame": {
+        "x": 1079,
+        "y": 955,
+        "w": 259,
+        "h": 134
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_02.webp"
+    },
+    "air_fortress_damaged_03.webp": {
+      "frame": {
+        "x": 1340,
+        "y": 955,
+        "w": 257,
+        "h": 136
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/damaged/air_fortress_damaged_03.webp"
+    },
+    "air_fortress_destruction_00.webp": {
+      "frame": {
+        "x": 1599,
+        "y": 955,
+        "w": 257,
+        "h": 139
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_00.webp"
+    },
+    "air_fortress_destruction_01.webp": {
+      "frame": {
+        "x": 2,
+        "y": 1096,
+        "w": 259,
+        "h": 140
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_01.webp"
+    },
+    "air_fortress_destruction_02.webp": {
+      "frame": {
+        "x": 263,
+        "y": 1096,
+        "w": 254,
+        "h": 142
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_02.webp"
+    },
+    "air_fortress_destruction_03.webp": {
+      "frame": {
+        "x": 519,
+        "y": 1096,
+        "w": 242,
+        "h": 149
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_03.webp"
+    },
+    "air_fortress_destruction_04.webp": {
+      "frame": {
+        "x": 763,
+        "y": 1096,
+        "w": 204,
+        "h": 153
+      },
+      "source": "assets/sprites_v2/bosses/air_fortress/destruction/air_fortress_destruction_04.webp"
+    }
+  }
+}

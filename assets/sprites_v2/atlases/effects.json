@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "image": "assets/sprites_v2/atlases/effects.png",
+    "version": "1.5.1",
+    "format": "RGBA8888",
+    "scale": "1"
+  },
+  "frames": {
+    "combat_fx_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 112,
+        "h": 100
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_00.webp"
+    },
+    "combat_fx_01.webp": {
+      "frame": {
+        "x": 116,
+        "y": 2,
+        "w": 125,
+        "h": 100
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_01.webp"
+    },
+    "combat_fx_02.webp": {
+      "frame": {
+        "x": 243,
+        "y": 2,
+        "w": 106,
+        "h": 95
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_02.webp"
+    },
+    "combat_fx_03.webp": {
+      "frame": {
+        "x": 351,
+        "y": 2,
+        "w": 94,
+        "h": 83
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_03.webp"
+    },
+    "combat_fx_04.webp": {
+      "frame": {
+        "x": 447,
+        "y": 2,
+        "w": 169,
+        "h": 90
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_04.webp"
+    },
+    "combat_fx_05.webp": {
+      "frame": {
+        "x": 618,
+        "y": 2,
+        "w": 162,
+        "h": 81
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_05.webp"
+    },
+    "combat_fx_06.webp": {
+      "frame": {
+        "x": 782,
+        "y": 2,
+        "w": 157,
+        "h": 77
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_06.webp"
+    },
+    "combat_fx_07.webp": {
+      "frame": {
+        "x": 941,
+        "y": 2,
+        "w": 140,
+        "h": 89
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_07.webp"
+    },
+    "combat_fx_08.webp": {
+      "frame": {
+        "x": 1083,
+        "y": 2,
+        "w": 125,
+        "h": 79
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_08.webp"
+    },
+    "combat_fx_09.webp": {
+      "frame": {
+        "x": 1210,
+        "y": 2,
+        "w": 127,
+        "h": 77
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_09.webp"
+    },
+    "combat_fx_10.webp": {
+      "frame": {
+        "x": 1339,
+        "y": 2,
+        "w": 126,
+        "h": 77
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_10.webp"
+    },
+    "combat_fx_11.webp": {
+      "frame": {
+        "x": 1467,
+        "y": 2,
+        "w": 175,
+        "h": 81
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_11.webp"
+    },
+    "combat_fx_12.webp": {
+      "frame": {
+        "x": 1644,
+        "y": 2,
+        "w": 169,
+        "h": 82
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_12.webp"
+    },
+    "combat_fx_13.webp": {
+      "frame": {
+        "x": 1815,
+        "y": 2,
+        "w": 173,
+        "h": 71
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_13.webp"
+    },
+    "combat_fx_14.webp": {
+      "frame": {
+        "x": 2,
+        "y": 104,
+        "w": 129,
+        "h": 100
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_14.webp"
+    },
+    "combat_fx_15.webp": {
+      "frame": {
+        "x": 133,
+        "y": 104,
+        "w": 141,
+        "h": 95
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_15.webp"
+    },
+    "combat_fx_16.webp": {
+      "frame": {
+        "x": 276,
+        "y": 104,
+        "w": 133,
+        "h": 94
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_16.webp"
+    },
+    "combat_fx_17.webp": {
+      "frame": {
+        "x": 411,
+        "y": 104,
+        "w": 135,
+        "h": 91
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_17.webp"
+    },
+    "combat_fx_18.webp": {
+      "frame": {
+        "x": 548,
+        "y": 104,
+        "w": 126,
+        "h": 86
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_18.webp"
+    },
+    "combat_fx_19.webp": {
+      "frame": {
+        "x": 676,
+        "y": 104,
+        "w": 123,
+        "h": 83
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_19.webp"
+    },
+    "combat_fx_20.webp": {
+      "frame": {
+        "x": 801,
+        "y": 104,
+        "w": 111,
+        "h": 78
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_20.webp"
+    },
+    "combat_fx_21.webp": {
+      "frame": {
+        "x": 914,
+        "y": 104,
+        "w": 126,
+        "h": 80
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_21.webp"
+    },
+    "combat_fx_22.webp": {
+      "frame": {
+        "x": 1042,
+        "y": 104,
+        "w": 342,
+        "h": 126
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_22.webp"
+    },
+    "combat_fx_23.webp": {
+      "frame": {
+        "x": 1386,
+        "y": 104,
+        "w": 170,
+        "h": 122
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_23.webp"
+    },
+    "combat_fx_24.webp": {
+      "frame": {
+        "x": 1558,
+        "y": 104,
+        "w": 186,
+        "h": 119
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_24.webp"
+    },
+    "combat_fx_25.webp": {
+      "frame": {
+        "x": 1746,
+        "y": 104,
+        "w": 177,
+        "h": 113
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_25.webp"
+    },
+    "combat_fx_26.webp": {
+      "frame": {
+        "x": 2,
+        "y": 232,
+        "w": 185,
+        "h": 105
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_26.webp"
+    },
+    "combat_fx_27.webp": {
+      "frame": {
+        "x": 189,
+        "y": 232,
+        "w": 106,
+        "h": 124
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_27.webp"
+    },
+    "combat_fx_28.webp": {
+      "frame": {
+        "x": 297,
+        "y": 232,
+        "w": 98,
+        "h": 118
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_28.webp"
+    },
+    "combat_fx_29.webp": {
+      "frame": {
+        "x": 397,
+        "y": 232,
+        "w": 88,
+        "h": 105
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_29.webp"
+    },
+    "combat_fx_30.webp": {
+      "frame": {
+        "x": 487,
+        "y": 232,
+        "w": 79,
+        "h": 97
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_30.webp"
+    },
+    "combat_fx_31.webp": {
+      "frame": {
+        "x": 568,
+        "y": 232,
+        "w": 183,
+        "h": 91
+      },
+      "source": "assets/sprites_v2/effects/combat/combat_fx_31.webp"
+    }
+  }
+}

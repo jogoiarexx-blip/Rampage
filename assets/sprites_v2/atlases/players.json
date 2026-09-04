@@ -1,0 +1,784 @@
+{
+  "meta": {
+    "image": "assets/sprites_v2/atlases/players.png",
+    "version": "1.5.1",
+    "format": "RGBA8888",
+    "scale": "1"
+  },
+  "frames": {
+    "brutus_idle_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 180,
+        "h": 192
+      },
+      "source": "assets/sprites_v2/player/brutus/idle/brutus_idle_00.webp"
+    },
+    "brutus_idle_01.webp": {
+      "frame": {
+        "x": 184,
+        "y": 2,
+        "w": 169,
+        "h": 193
+      },
+      "source": "assets/sprites_v2/player/brutus/idle/brutus_idle_01.webp"
+    },
+    "brutus_idle_02.webp": {
+      "frame": {
+        "x": 355,
+        "y": 2,
+        "w": 188,
+        "h": 190
+      },
+      "source": "assets/sprites_v2/player/brutus/idle/brutus_idle_02.webp"
+    },
+    "brutus_idle_03.webp": {
+      "frame": {
+        "x": 545,
+        "y": 2,
+        "w": 182,
+        "h": 190
+      },
+      "source": "assets/sprites_v2/player/brutus/idle/brutus_idle_03.webp"
+    },
+    "brutus_idle_04.webp": {
+      "frame": {
+        "x": 729,
+        "y": 2,
+        "w": 187,
+        "h": 192
+      },
+      "source": "assets/sprites_v2/player/brutus/idle/brutus_idle_04.webp"
+    },
+    "brutus_walk_00.webp": {
+      "frame": {
+        "x": 918,
+        "y": 2,
+        "w": 159,
+        "h": 191
+      },
+      "source": "assets/sprites_v2/player/brutus/walk/brutus_walk_00.webp"
+    },
+    "brutus_walk_01.webp": {
+      "frame": {
+        "x": 1079,
+        "y": 2,
+        "w": 166,
+        "h": 190
+      },
+      "source": "assets/sprites_v2/player/brutus/walk/brutus_walk_01.webp"
+    },
+    "brutus_walk_02.webp": {
+      "frame": {
+        "x": 1247,
+        "y": 2,
+        "w": 186,
+        "h": 191
+      },
+      "source": "assets/sprites_v2/player/brutus/walk/brutus_walk_02.webp"
+    },
+    "brutus_walk_03.webp": {
+      "frame": {
+        "x": 1435,
+        "y": 2,
+        "w": 216,
+        "h": 192
+      },
+      "source": "assets/sprites_v2/player/brutus/walk/brutus_walk_03.webp"
+    },
+    "brutus_walk_04.webp": {
+      "frame": {
+        "x": 1653,
+        "y": 2,
+        "w": 191,
+        "h": 191
+      },
+      "source": "assets/sprites_v2/player/brutus/walk/brutus_walk_04.webp"
+    },
+    "brutus_punch_combo_00.webp": {
+      "frame": {
+        "x": 1846,
+        "y": 2,
+        "w": 182,
+        "h": 193
+      },
+      "source": "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_00.webp"
+    },
+    "brutus_punch_combo_01.webp": {
+      "frame": {
+        "x": 2,
+        "y": 197,
+        "w": 199,
+        "h": 186
+      },
+      "source": "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_01.webp"
+    },
+    "brutus_punch_combo_02.webp": {
+      "frame": {
+        "x": 203,
+        "y": 197,
+        "w": 185,
+        "h": 190
+      },
+      "source": "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_02.webp"
+    },
+    "brutus_punch_combo_03.webp": {
+      "frame": {
+        "x": 390,
+        "y": 197,
+        "w": 191,
+        "h": 189
+      },
+      "source": "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_03.webp"
+    },
+    "brutus_punch_combo_04.webp": {
+      "frame": {
+        "x": 583,
+        "y": 197,
+        "w": 216,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/brutus/punch_combo/brutus_punch_combo_04.webp"
+    },
+    "brutus_ground_slam_00.webp": {
+      "frame": {
+        "x": 801,
+        "y": 197,
+        "w": 169,
+        "h": 214
+      },
+      "source": "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_00.webp"
+    },
+    "brutus_ground_slam_01.webp": {
+      "frame": {
+        "x": 972,
+        "y": 197,
+        "w": 168,
+        "h": 222
+      },
+      "source": "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_01.webp"
+    },
+    "brutus_ground_slam_02.webp": {
+      "frame": {
+        "x": 1142,
+        "y": 197,
+        "w": 165,
+        "h": 216
+      },
+      "source": "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_02.webp"
+    },
+    "brutus_ground_slam_03.webp": {
+      "frame": {
+        "x": 1309,
+        "y": 197,
+        "w": 217,
+        "h": 197
+      },
+      "source": "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_03.webp"
+    },
+    "brutus_ground_slam_04.webp": {
+      "frame": {
+        "x": 1528,
+        "y": 197,
+        "w": 176,
+        "h": 179
+      },
+      "source": "assets/sprites_v2/player/brutus/ground_slam/brutus_ground_slam_04.webp"
+    },
+    "brutus_grab_throw_00.webp": {
+      "frame": {
+        "x": 1706,
+        "y": 197,
+        "w": 174,
+        "h": 195
+      },
+      "source": "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_00.webp"
+    },
+    "brutus_grab_throw_01.webp": {
+      "frame": {
+        "x": 2,
+        "y": 421,
+        "w": 180,
+        "h": 190
+      },
+      "source": "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_01.webp"
+    },
+    "brutus_grab_throw_02.webp": {
+      "frame": {
+        "x": 184,
+        "y": 421,
+        "w": 189,
+        "h": 164
+      },
+      "source": "assets/sprites_v2/player/brutus/grab_throw/brutus_grab_throw_02.webp"
+    },
+    "brutus_hurt_defeat_00.webp": {
+      "frame": {
+        "x": 375,
+        "y": 421,
+        "w": 175,
+        "h": 191
+      },
+      "source": "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_00.webp"
+    },
+    "brutus_hurt_defeat_01.webp": {
+      "frame": {
+        "x": 552,
+        "y": 421,
+        "w": 175,
+        "h": 157
+      },
+      "source": "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_01.webp"
+    },
+    "brutus_hurt_defeat_02.webp": {
+      "frame": {
+        "x": 729,
+        "y": 421,
+        "w": 230,
+        "h": 164
+      },
+      "source": "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_02.webp"
+    },
+    "brutus_hurt_defeat_03.webp": {
+      "frame": {
+        "x": 961,
+        "y": 421,
+        "w": 188,
+        "h": 128
+      },
+      "source": "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_03.webp"
+    },
+    "brutus_hurt_defeat_04.webp": {
+      "frame": {
+        "x": 1151,
+        "y": 421,
+        "w": 220,
+        "h": 105
+      },
+      "source": "assets/sprites_v2/player/brutus/hurt_defeat/brutus_hurt_defeat_04.webp"
+    },
+    "gorak_idle_00.webp": {
+      "frame": {
+        "x": 1373,
+        "y": 421,
+        "w": 190,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/idle/gorak_idle_00.webp"
+    },
+    "gorak_idle_01.webp": {
+      "frame": {
+        "x": 1565,
+        "y": 421,
+        "w": 192,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/idle/gorak_idle_01.webp"
+    },
+    "gorak_idle_02.webp": {
+      "frame": {
+        "x": 1759,
+        "y": 421,
+        "w": 192,
+        "h": 174
+      },
+      "source": "assets/sprites_v2/player/gorak/idle/gorak_idle_02.webp"
+    },
+    "gorak_idle_03.webp": {
+      "frame": {
+        "x": 2,
+        "y": 614,
+        "w": 193,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/gorak/idle/gorak_idle_03.webp"
+    },
+    "gorak_idle_04.webp": {
+      "frame": {
+        "x": 197,
+        "y": 614,
+        "w": 195,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/gorak/idle/gorak_idle_04.webp"
+    },
+    "gorak_walk_00.webp": {
+      "frame": {
+        "x": 394,
+        "y": 614,
+        "w": 192,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/gorak/walk/gorak_walk_00.webp"
+    },
+    "gorak_walk_01.webp": {
+      "frame": {
+        "x": 588,
+        "y": 614,
+        "w": 195,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/gorak/walk/gorak_walk_01.webp"
+    },
+    "gorak_walk_02.webp": {
+      "frame": {
+        "x": 785,
+        "y": 614,
+        "w": 193,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/walk/gorak_walk_02.webp"
+    },
+    "gorak_walk_03.webp": {
+      "frame": {
+        "x": 980,
+        "y": 614,
+        "w": 193,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/walk/gorak_walk_03.webp"
+    },
+    "gorak_walk_04.webp": {
+      "frame": {
+        "x": 1175,
+        "y": 614,
+        "w": 201,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/walk/gorak_walk_04.webp"
+    },
+    "gorak_claw_attack_00.webp": {
+      "frame": {
+        "x": 1378,
+        "y": 614,
+        "w": 196,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_00.webp"
+    },
+    "gorak_claw_attack_01.webp": {
+      "frame": {
+        "x": 1576,
+        "y": 614,
+        "w": 208,
+        "h": 177
+      },
+      "source": "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_01.webp"
+    },
+    "gorak_claw_attack_02.webp": {
+      "frame": {
+        "x": 1786,
+        "y": 614,
+        "w": 214,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_02.webp"
+    },
+    "gorak_claw_attack_03.webp": {
+      "frame": {
+        "x": 2,
+        "y": 793,
+        "w": 208,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_03.webp"
+    },
+    "gorak_claw_attack_04.webp": {
+      "frame": {
+        "x": 212,
+        "y": 793,
+        "w": 213,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/claw_attack/gorak_claw_attack_04.webp"
+    },
+    "gorak_tail_swipe_00.webp": {
+      "frame": {
+        "x": 427,
+        "y": 793,
+        "w": 215,
+        "h": 180
+      },
+      "source": "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_00.webp"
+    },
+    "gorak_tail_swipe_01.webp": {
+      "frame": {
+        "x": 644,
+        "y": 793,
+        "w": 213,
+        "h": 160
+      },
+      "source": "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_01.webp"
+    },
+    "gorak_tail_swipe_02.webp": {
+      "frame": {
+        "x": 859,
+        "y": 793,
+        "w": 204,
+        "h": 160
+      },
+      "source": "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_02.webp"
+    },
+    "gorak_tail_swipe_03.webp": {
+      "frame": {
+        "x": 1065,
+        "y": 793,
+        "w": 215,
+        "h": 160
+      },
+      "source": "assets/sprites_v2/player/gorak/tail_swipe/gorak_tail_swipe_03.webp"
+    },
+    "gorak_body_slam_00.webp": {
+      "frame": {
+        "x": 1282,
+        "y": 793,
+        "w": 192,
+        "h": 176
+      },
+      "source": "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_00.webp"
+    },
+    "gorak_body_slam_01.webp": {
+      "frame": {
+        "x": 1476,
+        "y": 793,
+        "w": 202,
+        "h": 174
+      },
+      "source": "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_01.webp"
+    },
+    "gorak_body_slam_02.webp": {
+      "frame": {
+        "x": 1680,
+        "y": 793,
+        "w": 213,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_02.webp"
+    },
+    "gorak_body_slam_03.webp": {
+      "frame": {
+        "x": 2,
+        "y": 975,
+        "w": 213,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/gorak/body_slam/gorak_body_slam_03.webp"
+    },
+    "gorak_breath_charge_00.webp": {
+      "frame": {
+        "x": 217,
+        "y": 975,
+        "w": 195,
+        "h": 166
+      },
+      "source": "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_00.webp"
+    },
+    "gorak_breath_charge_01.webp": {
+      "frame": {
+        "x": 414,
+        "y": 975,
+        "w": 170,
+        "h": 159
+      },
+      "source": "assets/sprites_v2/player/gorak/breath_charge/gorak_breath_charge_01.webp"
+    },
+    "gorak_defeat_00.webp": {
+      "frame": {
+        "x": 586,
+        "y": 975,
+        "w": 182,
+        "h": 165
+      },
+      "source": "assets/sprites_v2/player/gorak/defeat/gorak_defeat_00.webp"
+    },
+    "volt_idle_00.webp": {
+      "frame": {
+        "x": 770,
+        "y": 975,
+        "w": 173,
+        "h": 172
+      },
+      "source": "assets/sprites_v2/player/volt/idle/volt_idle_00.webp"
+    },
+    "volt_idle_01.webp": {
+      "frame": {
+        "x": 945,
+        "y": 975,
+        "w": 172,
+        "h": 171
+      },
+      "source": "assets/sprites_v2/player/volt/idle/volt_idle_01.webp"
+    },
+    "volt_idle_02.webp": {
+      "frame": {
+        "x": 1119,
+        "y": 975,
+        "w": 181,
+        "h": 174
+      },
+      "source": "assets/sprites_v2/player/volt/idle/volt_idle_02.webp"
+    },
+    "volt_idle_03.webp": {
+      "frame": {
+        "x": 1302,
+        "y": 975,
+        "w": 173,
+        "h": 172
+      },
+      "source": "assets/sprites_v2/player/volt/idle/volt_idle_03.webp"
+    },
+    "volt_idle_04.webp": {
+      "frame": {
+        "x": 1477,
+        "y": 975,
+        "w": 169,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/volt/idle/volt_idle_04.webp"
+    },
+    "volt_walk_00.webp": {
+      "frame": {
+        "x": 1648,
+        "y": 975,
+        "w": 175,
+        "h": 170
+      },
+      "source": "assets/sprites_v2/player/volt/walk/volt_walk_00.webp"
+    },
+    "volt_walk_01.webp": {
+      "frame": {
+        "x": 1825,
+        "y": 975,
+        "w": 173,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/volt/walk/volt_walk_01.webp"
+    },
+    "volt_walk_02.webp": {
+      "frame": {
+        "x": 2,
+        "y": 1152,
+        "w": 164,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/volt/walk/volt_walk_02.webp"
+    },
+    "volt_walk_03.webp": {
+      "frame": {
+        "x": 168,
+        "y": 1152,
+        "w": 165,
+        "h": 170
+      },
+      "source": "assets/sprites_v2/player/volt/walk/volt_walk_03.webp"
+    },
+    "volt_walk_04.webp": {
+      "frame": {
+        "x": 335,
+        "y": 1152,
+        "w": 331,
+        "h": 168
+      },
+      "source": "assets/sprites_v2/player/volt/walk/volt_walk_04.webp"
+    },
+    "volt_claw_combo_00.webp": {
+      "frame": {
+        "x": 668,
+        "y": 1152,
+        "w": 209,
+        "h": 170
+      },
+      "source": "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_00.webp"
+    },
+    "volt_claw_combo_01.webp": {
+      "frame": {
+        "x": 879,
+        "y": 1152,
+        "w": 189,
+        "h": 161
+      },
+      "source": "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_01.webp"
+    },
+    "volt_claw_combo_02.webp": {
+      "frame": {
+        "x": 1070,
+        "y": 1152,
+        "w": 205,
+        "h": 165
+      },
+      "source": "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_02.webp"
+    },
+    "volt_claw_combo_03.webp": {
+      "frame": {
+        "x": 1277,
+        "y": 1152,
+        "w": 222,
+        "h": 170
+      },
+      "source": "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_03.webp"
+    },
+    "volt_claw_combo_04.webp": {
+      "frame": {
+        "x": 1501,
+        "y": 1152,
+        "w": 212,
+        "h": 166
+      },
+      "source": "assets/sprites_v2/player/volt/claw_combo/volt_claw_combo_04.webp"
+    },
+    "volt_leap_attack_00.webp": {
+      "frame": {
+        "x": 1715,
+        "y": 1152,
+        "w": 187,
+        "h": 165
+      },
+      "source": "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_00.webp"
+    },
+    "volt_leap_attack_01.webp": {
+      "frame": {
+        "x": 2,
+        "y": 1327,
+        "w": 213,
+        "h": 164
+      },
+      "source": "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_01.webp"
+    },
+    "volt_leap_attack_02.webp": {
+      "frame": {
+        "x": 217,
+        "y": 1327,
+        "w": 200,
+        "h": 179
+      },
+      "source": "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_02.webp"
+    },
+    "volt_leap_attack_03.webp": {
+      "frame": {
+        "x": 419,
+        "y": 1327,
+        "w": 233,
+        "h": 175
+      },
+      "source": "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_03.webp"
+    },
+    "volt_leap_attack_04.webp": {
+      "frame": {
+        "x": 654,
+        "y": 1327,
+        "w": 244,
+        "h": 173
+      },
+      "source": "assets/sprites_v2/player/volt/leap_attack/volt_leap_attack_04.webp"
+    },
+    "volt_grab_throw_00.webp": {
+      "frame": {
+        "x": 900,
+        "y": 1327,
+        "w": 182,
+        "h": 159
+      },
+      "source": "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_00.webp"
+    },
+    "volt_grab_throw_01.webp": {
+      "frame": {
+        "x": 1084,
+        "y": 1327,
+        "w": 185,
+        "h": 156
+      },
+      "source": "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_01.webp"
+    },
+    "volt_grab_throw_02.webp": {
+      "frame": {
+        "x": 1271,
+        "y": 1327,
+        "w": 211,
+        "h": 153
+      },
+      "source": "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_02.webp"
+    },
+    "volt_grab_throw_03.webp": {
+      "frame": {
+        "x": 1484,
+        "y": 1327,
+        "w": 190,
+        "h": 149
+      },
+      "source": "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_03.webp"
+    },
+    "volt_grab_throw_04.webp": {
+      "frame": {
+        "x": 1676,
+        "y": 1327,
+        "w": 252,
+        "h": 143
+      },
+      "source": "assets/sprites_v2/player/volt/grab_throw/volt_grab_throw_04.webp"
+    },
+    "volt_roar_charge_00.webp": {
+      "frame": {
+        "x": 2,
+        "y": 1508,
+        "w": 155,
+        "h": 179
+      },
+      "source": "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_00.webp"
+    },
+    "volt_roar_charge_01.webp": {
+      "frame": {
+        "x": 159,
+        "y": 1508,
+        "w": 147,
+        "h": 156
+      },
+      "source": "assets/sprites_v2/player/volt/roar_charge/volt_roar_charge_01.webp"
+    },
+    "volt_hurt_defeat_00.webp": {
+      "frame": {
+        "x": 308,
+        "y": 1508,
+        "w": 187,
+        "h": 159
+      },
+      "source": "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_00.webp"
+    },
+    "volt_hurt_defeat_01.webp": {
+      "frame": {
+        "x": 497,
+        "y": 1508,
+        "w": 184,
+        "h": 154
+      },
+      "source": "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_01.webp"
+    },
+    "volt_hurt_defeat_02.webp": {
+      "frame": {
+        "x": 683,
+        "y": 1508,
+        "w": 191,
+        "h": 129
+      },
+      "source": "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_02.webp"
+    },
+    "volt_hurt_defeat_03.webp": {
+      "frame": {
+        "x": 876,
+        "y": 1508,
+        "w": 229,
+        "h": 110
+      },
+      "source": "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_03.webp"
+    },
+    "volt_hurt_defeat_04.webp": {
+      "frame": {
+        "x": 1107,
+        "y": 1508,
+        "w": 251,
+        "h": 106
+      },
+      "source": "assets/sprites_v2/player/volt/hurt_defeat/volt_hurt_defeat_04.webp"
+    }
+  }
+}
